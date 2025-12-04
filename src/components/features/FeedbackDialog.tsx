@@ -28,7 +28,7 @@ export function FeedbackDialog() {
                 <DialogHeader>
                     <DialogTitle>Share Your Feedback</DialogTitle>
                     <DialogDescription>
-                        Help us improve NikahMatch. Your thoughts and suggestions matter to us.
+                        Help us improve Match. Your thoughts and suggestions matter to us.
                     </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">

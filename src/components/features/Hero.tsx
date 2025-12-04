@@ -23,7 +23,7 @@ export function Hero() {
                     className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl"
                 >
                     A matchmaking service tailored for Muslims who value tradition, faith, and family.
-                    Start your journey to a blessed Nikah today.
+                    Start your journey to a blessed Matches today.
                 </motion.p>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

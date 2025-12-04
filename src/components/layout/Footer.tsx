@@ -6,7 +6,7 @@ export function Footer() {
             <div className="container mx-auto px-4 py-12 md:py-16">
                 <div className="grid gap-8 md:grid-cols-4">
                     <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-primary">NikahMatch</h3>
+                        <h3 className="text-lg font-bold text-primary">Match</h3>
                         <p className="text-sm text-muted-foreground">
                             Connecting hearts with faith and tradition. The premier matchmaking service for Muslims.
                         </p>
@@ -41,7 +41,7 @@ export function Footer() {
                 </div>
 
                 <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} NikahMatch. All rights reserved.
+                    © {new Date().getFullYear()} Match. All rights reserved.
                 </div>
             </div>
         </footer>
