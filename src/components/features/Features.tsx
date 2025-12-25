@@ -1,4 +1,7 @@
+"use client"
+
 import { Shield, Heart, Users, Lock } from "lucide-react"
+import { motion } from "framer-motion"
 
 const features = [
     {
@@ -23,6 +26,21 @@ const features = [
     },
 ]
 
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2
+        }
+    }
+}
+
+const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+}
+
 export function Features() {
     return (
         <section className="py-20">
@@ -32,17 +50,27 @@ export function Features() {
                     <p className="text-muted-foreground">Built upon the foundations of trust and tradition.</p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <motion.div
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
+                >
                     {features.map((feature) => (
-                        <div key={feature.name} className="flex flex-col items-center text-center">
-                            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <motion.div
+                            key={feature.name}
+                            variants={item}
+                            className="flex flex-col items-center text-center"
+                        >
+                            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform hover:scale-110">
                                 <feature.icon className="h-8 w-8" />
                             </div>
                             <h3 className="mb-2 text-xl font-semibold">{feature.name}</h3>
                             <p className="text-muted-foreground">{feature.description}</p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     )

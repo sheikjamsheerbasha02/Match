@@ -4,62 +4,13 @@ import { MatchCard } from "@/components/features/MatchCard"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-const MOCK_MATCHES = [
-    {
-        id: 1,
-        name: "Sarah",
-        age: 24,
-        location: "London, UK",
-        occupation: "Software Engineer",
-        education: "Masters",
-        sect: "Sunni",
-    },
-    {
-        id: 2,
-        name: "Aisha",
-        age: 27,
-        location: "Manchester, UK",
-        occupation: "Doctor",
-        education: "MD",
-        sect: "Sunni",
-    },
-    {
-        id: 3,
-        name: "Fatima",
-        age: 22,
-        location: "Birmingham, UK",
-        occupation: "Student",
-        education: "Bachelors",
-        sect: "Shia",
-    },
-    {
-        id: 4,
-        name: "Zainab",
-        age: 29,
-        location: "Leeds, UK",
-        occupation: "Teacher",
-        education: "Bachelors",
-        sect: "Sunni",
-    },
-    {
-        id: 5,
-        name: "Mariam",
-        age: 25,
-        location: "London, UK",
-        occupation: "Architect",
-        education: "Masters",
-        sect: "Sunni",
-    },
-    {
-        id: 6,
-        name: "Hana",
-        age: 26,
-        location: "Bristol, UK",
-        occupation: "Designer",
-        education: "Bachelors",
-        sect: "Sunni",
-    },
-]
+import { MOCK_MATCHES } from "@/lib/mock-data"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "Discover Matches | Muslim Match",
+    description: "Find your perfect match based on compatibility, values, and preferences.",
+}
 
 export default function MatchesPage() {
     return (

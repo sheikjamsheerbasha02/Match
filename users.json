@@ -1,0 +1,16 @@
+[
+  {
+    "id": "9wyn4wdnhbi",
+    "createdAt": "2025-12-14T14:27:06.275Z",
+    "name": "Test User",
+    "email": "test@example.com",
+    "password": "$2b$10$7REFCogOLMk6l6kaDNCScug8XSAtrVvQ5LlkbrGxAWTQbuWd97GJK"
+  },
+  {
+    "id": "btq88acykbu",
+    "createdAt": "2025-12-14T14:27:40.948Z",
+    "name": "SHEIK BASHA",
+    "email": "sheikjamsheerbashat@gmail.com",
+    "password": "$2b$10$NiY15s5ufo0eKffax3QYZenwdXxNADkGR1vYw6mrrcHhg3AnzT4/e"
+  }
+]

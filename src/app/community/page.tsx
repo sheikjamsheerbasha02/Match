@@ -6,58 +6,13 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { MessageCirclePlus } from "lucide-react"
 
-const FORUM_TOPICS = [
-    {
-        id: 1,
-        title: "Tips for First Meeting with Potential Match",
-        author: "Amina K.",
-        category: "Advice",
-        timeAgo: "2 hours ago",
-        replies: 24,
-        likes: 45,
-        excerpt: "Assalamu alaikum everyone! I have my first meeting coming up next week and I'm feeling nervous. What questions should I ask?"
-    },
-    {
-        id: 2,
-        title: "Importance of Family Involvement in Marriage Process",
-        author: "Ibrahim M.",
-        category: "Islamic Guidance",
-        timeAgo: "5 hours ago",
-        replies: 18,
-        likes: 67,
-        excerpt: "I wanted to share my thoughts on why involving family, especially the Wali, is crucial in the marriage process..."
-    },
-    {
-        id: 3,
-        title: "Success Story: Found My Match After 6 Months!",
-        author: "Sarah A.",
-        category: "Success Stories",
-        timeAgo: "1 day ago",
-        replies: 89,
-        likes: 234,
-        excerpt: "Alhamdulillah! I wanted to share my journey and give hope to everyone still searching. We got engaged last week!"
-    },
-    {
-        id: 4,
-        title: "Dealing with Rejection Gracefully",
-        author: "Yusuf H.",
-        category: "Support",
-        timeAgo: "2 days ago",
-        replies: 31,
-        likes: 52,
-        excerpt: "It's been tough lately. How do you all cope with rejection while staying positive in your search?"
-    },
-    {
-        id: 5,
-        title: "Balancing Career and Marriage Search",
-        author: "Fatima R.",
-        category: "Advice",
-        timeAgo: "3 days ago",
-        replies: 15,
-        likes: 38,
-        excerpt: "As a working professional, I'm finding it challenging to balance my career growth with actively searching for a partner..."
-    },
-]
+import { FORUM_TOPICS } from "@/lib/mock-data"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "Community Forum | Muslim Match",
+    description: "Join the conversation, share experiences, and seek advice from our community.",
+}
 
 export default function CommunityPage() {
     return (

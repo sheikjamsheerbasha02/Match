@@ -19,7 +19,8 @@ export function MatchCard({ name, age, location, occupation, education, sect, im
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             whileHover={{ y: -8, transition: { duration: 0.2 } }}
         >
             <Card className="overflow-hidden transition-shadow hover:shadow-lg">
